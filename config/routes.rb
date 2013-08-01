@@ -1,7 +1,7 @@
 Talkvite4::Application.routes.draw do
 
-  root to: 'users#new'
-	
+  resources :talks
+
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -58,4 +58,8 @@ Talkvite4::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  # later make this the home page
+  root to: 'users#new'
+	
 end

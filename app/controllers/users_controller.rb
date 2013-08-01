@@ -18,6 +18,7 @@ class UsersController < ApplicationController
   end
 
   # GET /users/1/edit
+  # you must be signed in to edit
   def edit
   end
 
@@ -53,6 +54,10 @@ class UsersController < ApplicationController
 
   # DELETE /users/1
   # DELETE /users/1.json
+  # regular users:  
+  #   can't touch anyone else's records
+  #   they can make themselves inactive, but not remove
+  # admins: can inactivate or remove others, not themselves
   def destroy
     @user.destroy
     respond_to do |format|
