@@ -17,3 +17,4 @@ location1 = Location.create( name: "Nowhere/NoCity/NoCountry/NoPost",
   post_code: "NoPost"
 );
 venue1 = Venue.create( venue_type: 'none', location_id: location1.id );
+user2 = User.create( name: 'test user', email: 'testy@talkvite.com', location_id: location1.id );
