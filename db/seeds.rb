@@ -23,4 +23,5 @@ venue1 = Venue.create!( venue_type: 'none', location_id: location1.id );
 user2 = User.create!( name: 'test user', email: 'testy@talkvite.com', location_id: location1.id );
 
 # on polymorphic assume, for now, that we will use the table name, i.e. 'users', 'locations', 'venues', and so on
-tag1 = Tag.create!( tag: 'all', tagable_type: 'users', tagable_id: user2.id );
+tag1 = Tag.create!( tag: 'all', tagable_type: 'users', tagable_id: user2.id )
+rating1 = Rating.create!( rating: 1, ratable_type: 'venues', ratable_id: venue1.id )

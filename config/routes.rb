@@ -1,5 +1,7 @@
 Talkvite4::Application.routes.draw do
 
+  resources :ratings
+
   resources :tags
 
   resources :venues
