@@ -1,5 +1,9 @@
 Talkvite4::Application.routes.draw do
 
+  resources :venues
+
+  resources :locations
+
   resources :posts
 
   resources :talks

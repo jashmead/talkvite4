@@ -9,3 +9,11 @@
 user1 = User.create( name: 'akmed13', email: 'akmed13@talkvite.com' )
 talk1 = Talk.create( user_id: user1.id, content: 'talk about talkvite' )
 post1 = Post.create( user_id: user1.id, talk_id: talk1.id, post_type: 'join', content: "Hello, World!" )
+location1 = Location.create( name: "Nowhere/NoCity/NoCountry/NoPost", 
+  address_full: "1 Nowhere Street\n\nNoCity\nNoCountry\nNoPost", 
+  street1: "1 Nowhere Street",
+  city: "NoCity",
+  country: "NoCountry",
+  post_code: "NoPost"
+);
+venue1 = Venue.create( venue_type: 'none', location_id: location1.id );

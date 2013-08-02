@@ -1,4 +1,4 @@
-class CreatePosts < ActiveRecord::Migration
+class AddColumnsToLocations < ActiveRecord::Migration
   def change
     create_table :posts do |t|
       t.integer :talk_id
