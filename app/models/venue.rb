@@ -1,3 +1,4 @@
 class Venue < ActiveRecord::Base
-  belongs_to :location
+  has_one :location
+  has_many :tags, :as => :tagable
 end

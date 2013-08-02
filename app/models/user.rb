@@ -6,5 +6,6 @@
 
 class User < ActiveRecord::Base
   has_many :talks
-  belongs_to :location
+  has_one :location
+  has_many :tags, :as => :tagable
 end
